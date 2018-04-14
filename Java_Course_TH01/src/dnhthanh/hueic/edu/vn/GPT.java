@@ -21,7 +21,7 @@ public class GPT {
 		}else {
 			if (delta == 0){
 				x3 = (-b) / (2 * a);
-				System.out.println("Phương trình có một nghiệm: ");
+				System.out.println("Phương trình có một nghiệm kép: " + x3);
 			}else if (delta > 0){
 				x1 = -b + ((float)Math.sqrt(delta)) / (2 * a);
 				x2 = -b - ((float)Math.sqrt(delta)) / (2 * a);
