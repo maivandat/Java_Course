@@ -35,21 +35,13 @@ public class KhachHang {
 		username = "admin";
 	}
 
-	public void MuaHang() {
-		HangHoa hangHoa = new HangHoa();
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập tên hàng");
-		String ten = sc.nextLine();
-		System.out.println("Nhập ngày sản xuất");
-		int ngaysx = sc.nextInt();
-		System.out.println("Nhập số lượng");
-		int sl = sc.nextInt();
-		System.out.println("Nhập Đơn giá");
-		double dg = sc.nextDouble();
-		hangHoa.setTenHang(ten);
-		hangHoa.setNgaySanXuat(ngaysx);
-		hangHoa.setSoLuong(sl);
-		hangHoa.setDonGia(dg);
-		System.out.println("Thành tiền = " + hangHoa.TinhTien());
-	}
+	public void MuaHang(String th, int nsx, double dg, int sl) {
+			HangHoa hh = new HangHoa();
+			hh.setTenHang(th);
+			hh.setNgaySanXuat(nsx);
+			hh.setDonGia(dg);
+			hh.setSoLuong(sl);
+			hh.TinhTien();
+			System.out.println(hh.toString());
+		}
 }
