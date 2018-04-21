@@ -32,10 +32,10 @@ public class KhachHang {
 
 	public KhachHang() {
 		username = "admin";
-		username = "admin";
+		password = "admin";
 	}
 
-	public void MuaHang(String th, int nsx, double dg, int sl) {
+	public void MuaHang(String th, String nsx, double dg, int sl) {
 			HangHoa hh = new HangHoa();
 			hh.setTenHang(th);
 			hh.setNgaySanXuat(nsx);

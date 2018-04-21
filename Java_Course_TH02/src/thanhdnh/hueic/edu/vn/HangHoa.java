@@ -4,7 +4,7 @@ public class HangHoa {
 	private String tenhang;
 	//Tiếp tục cho các thuộc tính còn lại
 
-	private int ngaysanxuat;
+	private String ngaysanxuat;
 	private double dongia;
 	private int soluong;
 
@@ -17,11 +17,11 @@ public class HangHoa {
 	}
 	//Tiếp tục cho các phương thức còn lại
 
-	public int getNgaySanXuat() {
+	public String getNgaySanXuat() {
 		return ngaysanxuat;
 	}
 
-	public void setNgaySanXuat(int nsx) {
+	public void setNgaySanXuat(String nsx) {
 		ngaysanxuat = nsx;
 	}
 
@@ -45,7 +45,7 @@ public class HangHoa {
 		return dongia * soluong;
 	}
 
-	public HangHoa(String th, int nsx, double dg, int sl) {
+	public HangHoa(String th, String nsx, double dg, int sl) {
 		tenhang = th;
 		ngaysanxuat = nsx;
 		dongia = dg;
