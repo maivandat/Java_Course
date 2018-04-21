@@ -35,13 +35,13 @@ public class KhachHang {
 		password = "admin";
 	}
 
-	public void MuaHang(String th, String nsx, double dg, int sl) {
+	public String MuaHang(String th, String nsx, double dg, int sl) {
 			HangHoa hh = new HangHoa();
 			hh.setTenHang(th);
 			hh.setNgaySanXuat(nsx);
 			hh.setDonGia(dg);
 			hh.setSoLuong(sl);
 			hh.TinhTien();
-			System.out.println(hh.toString());
+			return hh.toString();
 		}
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MainProgram {
 
 	public static void main(String[] args) {
+		String trangthai = new String();
 		HangHoa hh = new HangHoa();
 		KhachHang kh = new KhachHang();
 		//Tiếp tục với các yêu cầu của đề bài
@@ -31,9 +32,10 @@ public class MainProgram {
 					int sl = sc1.nextInt();
 					System.out.println("Nhập Đơn giá");
 					double dg = sc1.nextDouble();
-					kh.MuaHang(ten, ngaysx, dg, sl);
-					hh.toString();
-				}
+					trangthai += "\n------\n" + kh.MuaHang(ten, ngaysx, dg, sl);
+				}else {
+				System.out.println(trangthai);
+			}
 			}while (n != 2);
 		}else {
 			System.out.println("Xin lỗi, tài khoản của quý khách không tồn tại trong hệ thống. Xin liên hệ chi nhánh khách hàng gần nhất");
