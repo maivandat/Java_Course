@@ -31,7 +31,7 @@ public class Round {
 	//Xét vị trí tương đối điểm với đường tròn: nếu nằm trong - trả về -1; nếu nằm ngoài - trả về 1; nếu nằm trên - trả về 0
 	public int ViTriTuongDoiDiemVoiDuongTron(Point A) {
 		//bình phương khoảng cách đoạn OA
-		float OAbp = (float) Math.sqrt(((A.getX() - O.getX()) * (A.getX() - O.getX())) + ((A.getY() - O.getY()) - A.getY() - O.getY()));
+		float OAbp = (float) Math.sqrt((Math.pow(O.getX() - A.getX(), 2)) + (Math.pow(O.getY() - A.getY(), 2)));
 		//xét vị trí tương đối
 		if (OAbp == R){
 			return 0;
